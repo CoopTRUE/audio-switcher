@@ -54,7 +54,8 @@ def get_other_device_name():
 
 
 def set_device(device_name):
-    subprocess.run(["nircmdc.exe", "setdefaultsounddevice", device_name])
+    subprocess.run(["nircmdc.exe", "setdefaultsounddevice", device_name, "1"])
+    subprocess.run(["nircmdc.exe", "setdefaultsounddevice", device_name, "2"])
 
 
 def toggle_device():
